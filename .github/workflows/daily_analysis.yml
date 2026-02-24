@@ -193,7 +193,7 @@ jobs:
           elif [ "$MODE" = "stocks-only" ]; then
             python main.py --no-market-review
           else
-            python main.py
+            python main.py y --schedule --no-run-immediately
           fi
       
       - name: 上传分析报告
